@@ -1,16 +1,5 @@
-# fizzbuzz
+# FizzBuzz
 
-A new Flutter project.
+Une simple petite application qui génère dans une boite de dialogue une suite de nombre en suivant la convention [FizzBuzz](https://en.wikipedia.org/wiki/Fizz_buzz).
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="/Users/danielschreurs/HEPL/hepl-dam/fizzbuzz/README.gif" alt="README" style="zoom:33%;" />
