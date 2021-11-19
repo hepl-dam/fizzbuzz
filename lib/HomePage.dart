@@ -91,7 +91,7 @@ class _HomePageState extends State<HomePage> {
                       context: context,
                       builder: (BuildContext context) => AlertDialog(
                         title: const Text('FizzBuzz'),
-                        content: Text(generateFizzBuzz(min, max)),
+                        content: Text(fizzBuzz(min, max)),
                         actions: <Widget>[
                           TextButton(
                             onPressed: () => Navigator.pop(context, 'OK'),
@@ -117,21 +117,20 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  String generateFizzBuzz(int min, int max) {
-    print(min);
-    print(max);
-    String result = '';
-    for (int i = min; i < max; i++) {
-      if (i % 3 == 0 && i & 5 == 0) {
-        result += 'FizzBuzz, ';
+  String fizzBuzz(int min, int max) {
+    String fizzBuzz = "";
+    for (int i = min; i <= max; i++) {
+      if (i % 3 == 0 && i % 5 == 0) {
+        fizzBuzz += "FizzBuzz, ";
       } else if (i % 3 == 0) {
-        result += 'Fizz, ';
+        fizzBuzz += "Fizz, ";
       } else if (i % 5 == 0) {
-        result += 'Buzz, ';
+        fizzBuzz += "Buzz, ";
       } else {
-        result += i.toString() + ', ';
+        fizzBuzz += i.toString() + ", ";
       }
     }
-    return result;
+
+    return fizzBuzz;
   }
 }
